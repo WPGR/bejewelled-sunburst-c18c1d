@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="celulasas, electroforesis celulasas, microbiología, biotecnología, fermentación sustrato sólido, carboximetil celulosa, xilanasa, endoglucanasa">
+    <meta name="description" content="Investigación sobre producción y caracterización electroforética de celulasas en diferentes sistemas de fermentación">
+    <meta name="author" content="Roberto Ramos Chaupín">
+    <title>Investigación</title>
+    <style>
+        body {
+            background-image: url('fondo2.gif');
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: darkgreen;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table td {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.1em; /* Tamaño de letra más grande */
+        }
+        a {
+            color: darkgreen;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .last-updated {
+            font-size: 0.9em;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc; /* Viñetas redondas */
+            padding-left: 20px; /* Sangría para las viñetas */
+        }
+        ul ul {
+            list-style-type: circle; /* Subviñetas circulares */
+            padding-left: 20px; /* Sangría para las subviñetas */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Investigación</h1>
+        <hr>
+        <table>
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="cursos.html">Cursos</a></td>
+                <td><a href="notas.html">Notas</a></td>
+                <td>Investigación</td>
+                <td><a href="miscelanea.html">Lecturas</a></td>
+            </tr>
+        </table>
+        <hr>
+
+        <div class="content">
+            <ul>
+                <!--<li><a href="pag1.html">Perfil electroforético de celulasas</a></li>-->
+                <li><a href="pm10.pdf">Relationship between particulate matter (PM10), meteorological parameters, and the concentration of fungal spores in the atmosphere of San Martín Square in Lima</a></li>
+                <li><a href="clado.pdf">Occurrence of Cladosporium in the atmosphere of the Plaza San Martín (Lima, Peru) and their relationship to some meteorological factors</a></li>
+                <li><a href="efectos.pdf">Effects of some meteorological factors on the concentration of fungal spores at Plaza San Martín, Lima, Perú</a></li>
+                <li><a href="fsumergida.pdf">Determinación de patrones electroforéticos de celulasas producidas en fermentación sumergida por Trichoderma reesei LM-UC4</a></li>
+            </ul>
+        </div>
+
+        <div class="ad-container">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0668090180297806" crossorigin="anonymous"></script>
+        </div>
+
+        <footer>
+            <p class="last-updated" id="last-updated"></p>
+        </footer>
+    </div>
+
+    <script>
+        // Script para fecha de última modificación
+        const lastModified = document.getElementById('last-updated');
+        const options = { 
+            weekday: 'long', 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        };
+        lastModified.textContent = `Última actualización: ${new Date(document.lastModified).toLocaleDateString('es-ES', options)}`;
+    </script>
+</body>
+</html>

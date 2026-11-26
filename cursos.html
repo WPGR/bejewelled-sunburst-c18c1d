@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <style>
+        body {
+            background-image: url('fondo2.gif');
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: darkgreen;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table td {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.1em; /* Tamaño de letra más grande */
+        }
+        a {
+            color: darkgreen;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .last-updated {
+            font-size: 0.9em;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc; /* Viñetas redondas */
+            padding-left: 20px; /* Sangría para las viñetas */
+        }
+        ul ul {
+            list-style-type: circle; /* Subviñetas circulares */
+            padding-left: 20px; /* Sangría para las subviñetas */
+        }
+        .course-list {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0668090180297806" crossorigin="anonymous"></script>
+        <h1>Cursos</h1>
+        <hr>
+        <table>
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td>Cursos</td>
+                <td><a href="notas.html">Notas</a></td>
+                <td><a href="investigacion.html">Investigación</a></td>
+                <td><a href="miscelanea.html">Lecturas</a></td>
+            </tr>
+        </table>
+        <hr>
+
+        <div class="content">
+            <h2>Microbiología</h2>
+            <ul class="course-list">
+                <li><a href="microbsilabo.pdf">Sílabo</a></li>
+                <li><a href="Temas.pdf">Temas</a></li>
+                <li><a href="trinv.pdf">Grupos</a></li>
+                <li><a href="uni1.pdf">Introducción</a></li>
+                <li><a href="uni2.pdf">Célula procariota: Bacterias</a></li>
+                <li><a href="uni2cont.pdf">Célula procariota: Estructura celular</a></li>
+                <li><a href="cap.pdf">Célula procariota: Estructura superficie bacteriana</a></li>
+            <li><a href="membcel.pdf">Célula procariota: Membrana celular</a></li>
+                <li><a href="wall.pdf">Célula procariota: Pared celular</a></li>
+                <li><a href="sintwall.pdf">Célula procariota: Síntesis pared celular</a></li>
+                <li><a href="fungi.pdf">Célula eucariota: Hongos</a></li>
+                <li><a href="wallfungi.pdf">Célula eucariota: Pared celular hongos</a></li>
+                <li><a href="repfungi.pdf">Célula eucariota: Reproducción hongos</a></li>
+            <li><a href="uni4.pdf">Nutrición</a></li>
+                <li><a href="metab.pdf">Metabolismo</a>
+                    <ul>
+                        <li><a href="metab2.pdf">Metabolismo (continuación)</a></li>
+                    </ul>
+                </li>
+                <li><a href="crecimiento.pdf">Crecimiento</a></li>
+                <!--<li><a href="1_genet.pdf">Genética</a>
+                    <ul>
+                        <li><a href="2_DNA.pdf">DNA replicación</a></li>
+                        <li><a href="3_transc.pdf">Transcripción</a></li>
+                    <li><a href="4_regulac.pdf">Regulación</a></li>
+                    </ul>
+                </li>
+                <li><a href="virus.pdf">Virus</a></li>
+                <li><a href="1_recomb.pdf">Recombinación</a>
+                    <ul>
+                        <li><a href="Und9ab.pdf">... continuación</a></li>
+                    </ul>
+                </li>-->
+            </ul>
+
+            <h2>Laboratorio de Microbiología</h2>
+            <ul class="course-list">
+                <li><a href="labmic.pdf">Sílabo</a></li>
+                <li><a href="pca.pdf">Prácticas, informes, materiales</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p class="last-updated" id="last-updated"></p>
+        </footer>
+    </div>
+
+    <script>
+        // Script para fecha de última modificación
+        const lastModified = document.getElementById('last-updated');
+        const options = { 
+            weekday: 'long', 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        };
+        lastModified.textContent = `Última actualización: ${new Date(document.lastModified).toLocaleDateString('es-ES', options)}`;
+    </script>
+</body>
+</html>

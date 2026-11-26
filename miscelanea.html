@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturas</title>
+    <style>
+        body {
+            background-image: url('fondo2.gif');
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: darkgreen;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table td {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.1em; /* Tamaño de letra más grande */
+        }
+        a {
+            color: darkgreen;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .last-updated {
+            font-size: 0.9em;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc; /* Viñetas redondas */
+            padding-left: 20px; /* Sangría para las viñetas */
+        }
+        ul ul {
+            list-style-type: circle; /* Subviñetas circulares */
+            padding-left: 20px; /* Sangría para las subviñetas */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lecturas</h1>
+        <hr>
+        <table>
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="cursos.html">Cursos</a></td>
+                <td><a href="notas.html">Notas</a></td>
+                <td><a href="investigacion.html">Investigación</a></td>
+                <td>Lecturas</td>
+            </tr>
+        </table>
+        <hr>
+
+        <div class="content">
+            <p>Algunas lecturas interesantes para discusión:</p>
+            <ul>
+                <li><a href="organ.pdf">Formation and function of bacterial organelles</a></li>
+                <li><a href="airpoll.pdf">Reframing air pollution as a cognitive and socioeconomic risk Check</a></li>
+                <li><a href="stroke.pdf">Expression of SARS-CoV-2 spike protein in cerebral Arteries: Implications for hemorrhagic stroke Post-mRNA vaccination</a></li>
+                <li><a href="corona.pdf">Persistence of coronaviruses on inanimate surfaces and their inactivation with biocidal agents</a></li>
+                <li><a href="leu.pdf">The unseen world. reflections on Leeuwenhoek (1677) Concerning little animals</a></li>
+                <li><a href="bcereus.pdf">From soil to gut: Bacillus cereus and its food poisoning toxins</a></li>
+                <li><a href="porins.pdf">Microbe-Host Interactions: Structure and Role of Gram-Negative Bacterial Porins</a></li>
+                <li><a href="invasive.pdf">Invasive Fungal Infections after Natural Disasters</a></li>
+                <li><a href="rhizo.pdf">Rhizopus stolonifer exhibits dimorphism</a></li>
+                <li><a href="milk.pdf">Milk intake and risk of mortality and fractures in women and men: cohort studies</a></li>
+                <li><a href="heli.pdf">Is Helicobacter pylori a True Microaerophile?</a></li>
+                <li><a href="ribotoxins.pdf">Fungal Ribotoxins. A Review of Potential Biotechnological Applications</a></li>
+                <li><a href="chernobyl.pdf">Fungi from Chernobyl. mycobiota of the inner regions of the containment structures of the damaged nuclear reactor</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p class="last-updated" id="last-updated"></p>
+        </footer>
+    </div>
+
+    <script>
+        // Script para fecha de última modificación
+        const lastModified = document.getElementById('last-updated');
+        const options = { 
+            weekday: 'long', 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        };
+        lastModified.textContent = `Última actualización: ${new Date(document.lastModified).toLocaleDateString('es-ES', options)}`;
+    </script>
+</body>
+</html>
